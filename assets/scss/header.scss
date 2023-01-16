@@ -1,0 +1,13 @@
+@import './colors';
+header{
+    overflow: hidden;
+    background: $header-background;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    top: 0%;
+    width: 100%;
+    padding-block: 20px;
+    margin-block: auto;
+}
+

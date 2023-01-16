@@ -1,0 +1,66 @@
+@import './colors';
+
+.input-date {
+    display: flex;
+    width: 100%;
+
+    gap: 14.5px;
+}
+
+.input-date-picker{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+.input-date-text{
+    // min-width: 221px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    // left: 0px;
+    span{
+        position:relative;
+        width: fit-content;
+        bottom: 58px;
+        left:8px;
+        background-color: $background-text;
+    }
+    &-content{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 6px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: $border-color;
+        width: 100%;
+        // background-color: red;
+        
+        input{
+            width: 100%;
+            margin-inline: 13px;
+            margin-block: 15px;
+            border: none;
+            outline: none;
+            cursor:default;
+        }
+        .icon{
+            cursor: pointer;
+            margin-right: 8.9px;
+        }
+    }
+}
+
+.input-date-error{
+    width: 100%;
+    color:$red-color;
+    text-align: center;
+    position: relative;
+    top: -10px;
+}
+.error-date{
+    border-color: $red-color;
+}
+
