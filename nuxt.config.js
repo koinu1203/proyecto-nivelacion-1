@@ -13,6 +13,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {src: 'https://kit.fontawesome.com/7a9f777c24.js', crossorigin:'anonymous'}
     ],
   },
   mode: 'universal',
