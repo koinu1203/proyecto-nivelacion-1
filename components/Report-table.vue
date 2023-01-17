@@ -3,23 +3,7 @@ export default {
   props: {
     reports: {
       type: Array,
-      default: [
-        {
-          title: "Reporte de usuario 1",
-          creation: "04/02/2022",
-          download: "https://tkambio.com/",
-        },
-        {
-          title: "Reporte de usuario 2",
-          creation: "04/02/2022",
-          download: "https://tkambio.com/",
-        },
-        {
-          title: "Reporte de usuario 3",
-          creation: "04/02/2022",
-          download: "https://tkambio.com/",
-        },
-      ],
+      default: [],
     },
   },
 };
@@ -50,6 +34,6 @@ export default {
           </td>
         </tr>
       </tbody>
-    </table>
+    </Table>
   </div>
 </template>
