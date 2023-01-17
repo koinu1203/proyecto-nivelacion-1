@@ -1,73 +1,45 @@
-@import './_breakpoint.scss';
-@import './_colors.scss';
-@import './_media.scss';
-@import './_fonts.scss';
-@import './header.scss';
-@import './button.scss';
-@import './table.scss';
-@import './Input.scss';
-@import './dateinput.scss';
-@import './calendar.scss';
-@import './modal.scss';
+@import './_mixins';
+@import './_breakpoint';
+@import './_colors';
+@import './_media';
+@import './_fonts';
+@import './header';
+@import './button';
+@import './table';
+@import './Input';
+@import './dateinput';
+@import './calendar';
+@import './modal';
 
 
 body{
     margin: 0;
     font-family: "ArgentumSans-Regular", Arial, Helvetica, sans-serif;
     background-color: $background-body;
-    #app{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
 }
 h1{
-    font-family: "ArgentumSans-Regular";
-    font-size: 28px;
-    font-weight: 400;
-    line-height: 33px;
-    text-align: center;
+    @include set-font-family("ArgentumSans-Regular",28px,400,33px,0em,center);
 
 }
 h2{
+    @include set-font-family("ArgentumSans-Bold",24px,800,28px,0em,center);
     margin: 0px;
-    font-family: "ArgentumSans-Bold";
-    font-size: 24px;
-    font-weight: 800;
-    line-height: 28px;
-    letter-spacing: 0em;
-    text-align: center;
 
 }
 h3{
+    @include set-font-family("ArgentumSans-Light",16px,300,16px,0em,center);
     margin: 0px;
-    font-family: "ArgentumSans-Light";
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 16px;
-    letter-spacing: 0em;
-    text-align: center;
     color: $gray-color;
 
 }
 span{
-    font-family: "ArgentumSans-Light";
-    font-size: 12px;
-    font-weight: 300;
-    line-height: 16px;
-    letter-spacing: 0.20000000298023224px;
+    @include set-font-family("ArgentumSans-Light",12px,300,16px,0.20000000298023224px,left);
     color: $spam-color;
-    text-align: left;
+
 }
 input{
+    @include set-font-family("ArgentumSans-Regular",12px,400,14px,0.25px,left);
     color: rgba(105, 105, 105, 1);
-    font-family: "ArgentumSans-Regular";
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 14px;
-    letter-spacing: 0.25px;
-    text-align: left;
 
 }
 section{
