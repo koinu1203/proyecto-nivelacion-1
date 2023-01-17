@@ -15,6 +15,7 @@ button{
     letter-spacing: 0em;
     text-align: center;
     align-self: center;
+    margin-block: 15px default;
 }
 button:disabled{
     background: $button-disable;
