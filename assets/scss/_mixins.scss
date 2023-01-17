@@ -1,14 +1,22 @@
-@mixin set-font-face($font-name){
-    @font-face{
-        font-family:$font-name;
+@mixin set-font-face($font-name) {
+    @font-face {
+        font-family: $font-name;
         src: url('@/assets/fonts/#{$font-name}.ttf') format('truetype');
         // font-weight: $font-weight;
     }
 }
 
-@mixin declare-font-face($font-map){
-    @each $font in $font-map{
+@mixin declare-font-face($font-map) {
+    @each $font in $font-map {
         @include set-font-face($font);
     }
 }
 
+@mixin set-font-family($font-name, $size, $weight, $height, $spacing: 0em, $align: left) {
+    font-family: $font-name;
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height;
+    letter-spacing: $spacing;
+    text-align: $align;
+}
