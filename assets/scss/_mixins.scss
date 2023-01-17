@@ -12,11 +12,15 @@
     }
 }
 
-@mixin set-font-family($font-name, $size, $weight, $height, $spacing: 0em, $align: left) {
-    font-family: $font-name;
+@mixin set-font-specs($size: inherit, $weight: inherit, $height: inherit, $spacing: inherit, $align: inherit){
     font-size: $size;
     font-weight: $weight;
     line-height: $height;
     letter-spacing: $spacing;
     text-align: $align;
+}
+
+@mixin set-font-family($font-name: inherit, $size: inherit, $weight: inherit, $height: inherit, $spacing: 0em, $align: left) {
+    font-family: $font-name;
+    @include set-font-specs($size,$weight,$height,$spacing,$align);
 }
