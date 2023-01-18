@@ -4,6 +4,7 @@
 @import './_colors';
 @import './_media';
 @import './_fonts';
+@import './section';
 @import './header';
 @import './button';
 @import './table';
@@ -20,7 +21,10 @@ body{
 }
 h1{
     @include set-font-family("ArgentumSans-Regular",28px,400,33px,0em,center);
-
+    width: 100%;
+    @include md{
+        width: 90%
+    }
 }
 h2{
     @include set-font-family("ArgentumSans-Bold",24px,800,28px,0em,center);
