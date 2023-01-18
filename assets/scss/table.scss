@@ -6,14 +6,17 @@
     padding-block: 10px 30px;
     border-radius: 10px;
     width:fit-content;
-    @include lg{
-        width: 80%;
-    }
+    // @include lg{
+    //     width:100%;
+    // }
+    margin: 1em;
+
 }
 table{
+    
     background-color: $table-background-color;
     color: $table-text-color;
-
+    width: 100%;
     border-collapse:collapse;
     border-radius: 10px;
 
@@ -23,6 +26,7 @@ thead {
 }
 tr{
     border-bottom: 1px solid $table-border-color;
+    
     @include set-font-specs(16px,400,24px,0.15000000596046448px);
 
 }
@@ -32,7 +36,8 @@ tr:last-child{
 th{
     padding-bottom: 10px;
     @include lg{
-        width: 80%;
+        // width: 100%;
+        width: fit-content;
         &:nth-child(even){
             width: fit-content;
         }
@@ -42,8 +47,11 @@ td{
     padding-block: 15px;
     padding-inline: 73px;
     text-align: center;
-    width: fit-content;
+    max-width: fit-content;
     @include lg {
+        padding-inline: 40px;
+    }
+    @include md {
         padding-inline: 10px;
     }
 }
