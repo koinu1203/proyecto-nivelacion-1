@@ -38,8 +38,7 @@
     }
 }
 .calendar-options{
-    display: flex;
-    flex-direction: row;
+    @include use-flex();
     margin-top: 2px;
     margin-bottom: 18px;
     align-items: center;
@@ -62,7 +61,7 @@
 }
 
 .selected{
-    display: flex;
+    @include use-flex();
     justify-content: center;
     justify-items: center;
     align-items: center;
@@ -76,8 +75,7 @@
 }
 
 .calendar-selector{
-    display: flex;
-    flex-direction: row;
+    @include use-flex();
     justify-content: left;
     // gap: 10px;
     :nth-child(1){  
@@ -99,11 +97,10 @@
     }
 }
 .calendar-arrows-container{
+    @include use-flex();
     align-content:space-around;
     padding-right: 10px;
     width: 40px;
-    display: flex;
-    flex-direction: row;
     gap: 25px;
     
 }

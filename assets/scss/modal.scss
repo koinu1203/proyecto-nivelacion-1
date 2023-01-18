@@ -3,9 +3,8 @@
 
 
 .modal {
-    // display: none;
+    @include use-flex();
     position: fixed;
-    display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1;
@@ -19,6 +18,7 @@
 
 
 .modal-body {
+    @include use-flex(column);
     border-radius: 10px;
     position: relative;
     background-color: $modal-background-color;
@@ -28,8 +28,6 @@
     padding-inline: 23.5px;
     padding-top: 30px;
     padding-bottom: 20px;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     text-align: center;
     min-width: 250px;
@@ -63,8 +61,7 @@
 .modal-content {
     padding-inline: 11.5px;
     margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
+    @include use-flex(column);
     align-items: flex-start;
 }
 

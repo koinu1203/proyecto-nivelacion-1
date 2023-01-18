@@ -23,10 +23,7 @@ thead {
 }
 tr{
     border-bottom: 1px solid $table-border-color;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.15000000596046448px;
+    @include set-font-specs(16px,400,24px,0.15000000596046448px);
 
 }
 tr:last-child{
@@ -74,19 +71,11 @@ th:nth-child(1){ text-align: left; }
 th:nth-child(5){ text-align: right; }
 
 table tr td:nth-child(1){ 
-    text-align: left; 
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 14px;
-    letter-spacing: 0.25px;
+    @include set-font-specs(12px,400,14px,0.25px,left);
 
 }
 table tr td:nth-child(5){ 
-    text-align: right; 
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 24px;
-    letter-spacing: 0.15000000596046448px;
+    @include set-font-specs(16px,600,24px,0.15000000596046448px,right);
 
 }
 
@@ -104,8 +93,7 @@ td a{
     }
 
     @include lg{
-        display: flex;
-        flex-direction: column;
+        @include use-flex(column);
         align-items: center;
     }
 }
