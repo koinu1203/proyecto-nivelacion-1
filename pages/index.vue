@@ -6,7 +6,7 @@
                    @closeModal="() => (showModal = false)" />
     </transition>
     <section>
-      <h1>Generador de reportes</h1>
+      <h1 class="section-title">Generador de reportes TK</h1>
       <Report-table :reports="reports" />
       <button 
       id="open-report-modal"
