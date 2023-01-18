@@ -37,15 +37,16 @@
     
 }
 
-.modal-enter-active,
-.modal-leave-active {
-  transition: opacity 0.5s ease, transform 0.5s ease;
+
+.modal-enter-active, 
+.modal-leave-active { 
+    transition: opacity .5s; 
 }
-.modal-enter-from,
-.modal-leave-to {
-  opacity: 0;
-  transform: translateY(10px);
+.modal-enter, 
+.modal-leave-active { 
+    opacity: 0; 
 }
+
 
 .modal-title {
     padding-inline: 32.5px;
